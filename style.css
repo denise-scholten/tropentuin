@@ -1,0 +1,240 @@
+body{
+    background-color:#FFFDF0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    color: #273617;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+
+}
+/* homepagina */
+
+section{
+    background-color:#A6B37D ;
+    padding: 1em 2em 1em 2em;
+    border-radius: 1em;
+    margin: 2em;
+
+}
+
+section p{
+    margin: 0.5em;
+}
+
+section:last-of-type{
+    margin-bottom: 9em;
+}
+main img{
+    height: 10em;
+    width: 10em;
+}
+
+
+/* plant het zelf */
+ul{
+    padding: 0;
+}
+
+.lijstje{
+    list-style-type: none;
+    margin-top: 2em;
+    margin-bottom: 6em;
+}
+
+.lijstje li{
+    background-color:#A6B37D;
+    display: flex;
+    flex-direction:row ;
+    margin: 2em;
+    border-radius: 1em;
+    align-items: center;
+}
+
+.lijstje img{
+    height: 5em;
+    width: 5em;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+}
+
+.text h2{
+    margin: 0;
+}
+
+/* recpeten */
+
+.intro{
+    margin: 2em;
+    /* margin: 1em; */
+}
+.seizoen img{
+    width: 5em;
+    height: 5em;
+}
+
+.seizoen{
+    display: flex;
+    flex-direction: row;
+    background-color: #B8E36D;
+    border-radius: 1em;
+    margin: 1em; 
+    align-items: center;
+}
+.seizoen a{
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.seizoen:nth-of-type(1){
+    background-color: #F4ECB8;
+}
+.seizoen:nth-of-type(3){
+    background-color: #D68C45;
+}
+
+.seizoen:nth-of-type(4){
+    background-color: #B3DCE8;
+    margin-bottom: 9em;
+}
+
+
+/* lente */
+
+.lente li{
+    background-color:#F4ECB8;
+    display: flex;
+    flex-direction:row ;
+    margin: 3em;
+    border-radius: 1em;
+    list-style-type: none;
+}
+.lente img{
+    height: 5em;
+    width: 5em;
+}
+
+.lente p{
+    padding: 0.5em;
+    background-color: #A6B37D;
+    border-radius: 1em;
+    width: 5em;
+}
+
+
+/* zomer */
+.zomer li{
+    background-color:#B8E36D;
+    display: flex;
+    flex-direction:row ;
+    margin: 3em;
+    border-radius: 1em;
+    list-style-type: none;
+}
+.zomer img{
+    height: 5em;
+    width: 5em;
+}
+
+.zomer p{
+    padding: 0.5em;
+    background-color:#D68C45;
+    border-radius: 1em;
+    width: 5em;
+}
+
+/* herfst */
+
+.herfst li{
+    background-color:#D68C45;
+    display: flex;
+    flex-direction:row ;
+    margin: 3em;
+    border-radius: 1em;
+    list-style-type: none;
+}
+.herfst img{
+    height: 5em;
+    width: 5em;
+}
+
+.herfst p{
+    padding: 0.5em;
+    background-color:#A6B37D;
+    border-radius: 1em;
+    width: 5em;
+}
+
+/* winter */
+
+.winter li{
+    background-color:#B3DCE8;
+    display: flex;
+    flex-direction:row ;
+    margin: 3em;
+    border-radius: 1em;
+    list-style-type: none;
+}
+.winter img{
+    height: 5em;
+    width: 5em;
+}
+
+.winter p{
+    padding: 0.5em;
+    background-color:#F4ECB8;
+    border-radius: 1em;
+    width: 5em;
+}
+
+/* footer */
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding-left:0;
+    margin: 0em 1em 0em 1em;
+    background-color:#B89470 ;
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+
+.kikker img{
+    width: 5em;
+    height:5em;
+}
+
+.kikker p{
+    margin-top:0;
+}
+
+.kikker a{
+    text-decoration: none; 
+}
+/*    tekst kleur
+    #FFFDF0 background
+    #A6B37D groen tekstvlak
+    #B89470 nav kleur
+    #452F21 icoontjes
+     */
+
+    /*  #F4ECB8 lente 
+        #B8E36D zomer 
+        #D68C45 herfst
+        #B3DCE8 winter
+        #EBA25C recept tekstvlak */
+
