@@ -1,15 +1,59 @@
+@font-face{
+    font-family: chewy;
+    src: url(fonts/Chewy-Regular.ttf);
+}
+
+@font-face{
+    font-family: sniglet;
+    src: url(fonts/Sniglet-Regular.ttf);
+}
+
 body{
     background-color:#FFFDF0;
     margin: 0;
 }
 
 h1{
-    text-align: center;
     color: #273617;
-    /* position: fixed;
-    top: 0;
-    width: 100%; */
+    font-family: chewy;
+    font-size: 2.5em;
+}
 
+h2{
+    font-family: chewy;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+p{
+    font-family: sniglet;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.kruidenhofje{
+    margin-left: 1em;
+}
+
+.planthetzelf{
+    margin-left: 1em;
+}
+
+header img{
+    height: 4em;
+    width: 4em;
+    position: absolute;
+    left: 5%;
+    margin-top: 0em;
 }
 /* homepagina */
 
@@ -18,31 +62,52 @@ section{
     padding: 1em 2em 1em 2em;
     border-radius: 1em;
     margin: 2em;
-
+    margin-top: 4em;
 }
+
 
 section p{
     margin: 0.5em;
+    font-size: 0.9em;
+}
+
+section h2{
+    color: #273617;
 }
 
 section:last-of-type{
     margin-bottom: 9em;
 }
 main img{
-    height: 10em;
-    width: 10em;
+    height: 20em;
+    width: 20em;
+    margin-left: 1.5em;
 }
 
+div.intro{
+    margin: 0;
+}
+
+div.intro img{
+    height: 6em;
+    width: 6em;
+
+}
 
 /* plant het zelf */
+
+.blaadje{
+    position: relative;
+    top: 0%;
+}
 ul{
     padding: 0;
 }
 
 .lijstje{
     list-style-type: none;
-    margin-top: 2em;
-    margin-bottom: 6em;
+    margin-bottom: 9em;
+    padding-bottom: 5em;
 }
 
 .lijstje li{
@@ -50,13 +115,19 @@ ul{
     display: flex;
     flex-direction:row ;
     margin: 2em;
+    margin-top: 3.5em;
     border-radius: 1em;
     align-items: center;
+    
 }
 
-.lijstje img{
-    height: 5em;
-    width: 5em;
+.lijstje li > img {
+    height: 6em;
+    width: 6em;
+    background-color: #BFC78C;
+    border-radius: 1em;
+    padding: 3em 0.5em 3em 0.5em;
+    margin-left: 1em;
 }
 
 .text{
@@ -68,14 +139,23 @@ ul{
 
 .text h2{
     margin: 0;
+    color: #273617;
 }
 
+.text img{
+    height: 5.5em;
+    width: 5.5em;
+}
+
+.text p{
+    font-size: 0.9em;
+}
 /* recpeten */
 
 .intro{
     margin: 2em;
-    /* margin: 1em; */
 }
+
 .seizoen img{
     width: 5em;
     height: 5em;
@@ -87,11 +167,18 @@ ul{
     background-color: #B8E36D;
     border-radius: 1em;
     margin: 1em; 
+    margin-top: 3.5em;
     align-items: center;
 }
+
 .seizoen a{
+    justify-content: end;
+    align-items: end;
+}
+.seizoen h2{
     text-decoration: none;
     font-size: 1.5em;
+    margin-left: 1em;
 }
 .seizoen:nth-of-type(1){
     background-color: #F4ECB8;
@@ -107,18 +194,28 @@ ul{
 
 
 /* lente */
+.lente{
+margin-bottom: 8em;
+}
+
+.lente a{
+    text-decoration: none;
+}
 
 .lente li{
     background-color:#F4ECB8;
     display: flex;
     flex-direction:row ;
-    margin: 3em;
+    align-items: center;
+    margin: 2em;
+    margin-top: 3.5em;
     border-radius: 1em;
     list-style-type: none;
 }
 .lente img{
-    height: 5em;
-    width: 5em;
+    height: 8em;
+    width: 8em;
+    margin-right: 1em;
 }
 
 .lente p{
@@ -128,19 +225,39 @@ ul{
     width: 5em;
 }
 
+.lente li a{
+    color: black;
+}
+
+.paprika img{
+    width: 5em;
+    height: 5em;
+}
+
 
 /* zomer */
+
+.zomer{
+    padding-bottom: 6em;
+}
+
+.zomer a{
+    text-decoration: none;
+}
 .zomer li{
     background-color:#B8E36D;
     display: flex;
     flex-direction:row ;
-    margin: 3em;
+    align-items: center;
+    margin: 2em;
+    margin-top: 3.5em;
     border-radius: 1em;
     list-style-type: none;
 }
 .zomer img{
-    height: 5em;
-    width: 5em;
+    height: 8em;
+    width: 8em;
+    margin-right: 1em;
 }
 
 .zomer p{
@@ -150,19 +267,37 @@ ul{
     width: 5em;
 }
 
+.zomer li a{
+    color: black;
+}
+
+.aardbei img{
+    width: 5em;
+    height: 5em;
+}
+
 /* herfst */
+.herfst{
+    padding-bottom: 6em;
+}
+
+.herfst a{
+    text-decoration: none;
+}
 
 .herfst li{
     background-color:#D68C45;
     display: flex;
     flex-direction:row ;
-    margin: 3em;
+    align-items: center;
+    margin: 3.5em 2em 2em 2em ;
     border-radius: 1em;
     list-style-type: none;
 }
 .herfst img{
-    height: 5em;
-    width: 5em;
+    height: 8em;
+    width: 8em;
+    margin-right: 1em;
 }
 
 .herfst p{
@@ -172,19 +307,39 @@ ul{
     width: 5em;
 }
 
+.herfst li a{
+    color: black;
+}
+
+.pompoen img{
+    width: 5em;
+    height: 5em;
+}
+
+
 /* winter */
+.winter{
+    margin-bottom: 12em;
+    padding-bottom: 6em;
+}
+
+.winter a{
+    text-decoration: none;
+}
 
 .winter li{
     background-color:#B3DCE8;
     display: flex;
     flex-direction:row ;
-    margin: 3em;
+    align-items: center;
+    margin: 3.5em 2em 2em 2em;
     border-radius: 1em;
     list-style-type: none;
 }
 .winter img{
-    height: 5em;
-    width: 5em;
+    height: 8em;
+    width: 8em;
+    margin-right: 1em;
 }
 
 .winter p{
@@ -194,14 +349,24 @@ ul{
     width: 5em;
 }
 
+.winter li a{
+    color: black;
+}
+
+.wortel img{
+    width: 5em;
+    height: 5em;
+}
+
 /* footer */
 
-footer{
+
+nav{
     position: fixed;
     bottom: 0;
     width: 100%;
 }
-footer ul{
+nav ul{
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -213,28 +378,149 @@ footer ul{
     border-top-left-radius: 2em;
 }
 
-.kikker img{
+nav img{
     width: 5em;
     height:5em;
-}
-
-.kikker p{
-    margin-top:0;
 }
 
 .kikker a{
     text-decoration: none; 
 }
-/*    tekst kleur
-    #FFFDF0 background
-    #A6B37D groen tekstvlak
-    #B89470 nav kleur
-    #452F21 icoontjes
-     */
 
-    /*  #F4ECB8 lente 
-        #B8E36D zomer 
-        #D68C45 herfst
-        #B3DCE8 winter
-        #EBA25C recept tekstvlak */
+/* blaadjes */
 
+.recepten {
+    position:relative;
+}
+.blaadje {
+    position: absolute;
+    left: 35%;
+    top: -3.8em
+}
+.blaadje1 {
+    position: absolute;
+    left: 35%;
+    top: 5em
+}
+.blaadje2 {
+    position: absolute;
+    left: 35%;
+    top: 13.8em
+}
+.blaadje3 {
+    position: absolute;
+    left: 35%;
+    top: 22.6em
+}
+
+.lente{
+    position: relative;
+}
+
+.blaadje4{
+    position: absolute;
+    left: 35%;
+    top: -3.8em
+}
+.blaadje5{
+    position: absolute;
+    left: 35%;
+    top: 9.4em
+}
+.blaadje6{
+    position: absolute;
+    left: 35%;
+    top: 22.6em
+}
+
+.zomer{
+    position: absolute;
+}
+
+.blaadje7{
+    position: absolute;
+    left: 35%;
+    top: -0.3em
+}
+.blaadje8{
+    position: absolute;
+    left: 35%;
+    top: 12.9em
+}
+.blaadje9{
+    position: absolute;
+    left: 35%;
+    top: 24.4em
+}
+
+.herfst{
+    position:absolute ;
+}
+.blaadje10{
+    position: absolute;
+    left: 35%;
+    top: -0.3em
+}
+.blaadje11{
+    position: absolute;
+    left: 35%;
+    top: 12.9em
+}
+
+.blaadje12{
+    position: absolute;
+    left: 35%;
+    top: 26.1em
+}
+
+.winter{
+    position: absolute;
+}
+.blaadje13{
+    position: absolute;
+    left: 35%;
+    top: -0.3em
+}
+.blaadje14{
+    position: absolute;
+    left: 35%;
+    top: 12.9em
+}
+.blaadje15{
+    position: absolute;
+    left: 35%;
+    top: 26.1em
+}
+
+.lijstje{
+    position: absolute;
+}
+.blaadje16{
+    position: absolute;
+    left: 34%;
+    top: -0.7em
+}
+.blaadje17{
+    position: absolute;
+    left: 34%;
+    top: 20em
+}
+
+div.intro{
+    position: absolute;
+}
+.blaadje18{
+    position: absolute;
+    left: 32%;
+    top: -0.6em
+}
+.blaadje19{
+    position: absolute;
+    left: 32%;
+    top: 17.1em
+}
+.blaadje20{
+    position: absolute;
+    left: 32%;
+    top: 35.9em
+}
